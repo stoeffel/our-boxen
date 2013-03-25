@@ -49,6 +49,11 @@ GITHUBTARBALL
     libtool (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-nginx
+  specs:
+    nginx (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
     nodejs (1.0.0)
@@ -69,6 +74,11 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-postgresql
+  specs:
+    postgresql (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
     ruby (3.1.0)
@@ -82,6 +92,11 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sysctl
+  specs:
+    sysctl (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-vmware_fusion
@@ -123,11 +138,6 @@ GITHUBTARBALL
   specs:
     stdlib (3.0.0)
 
-GITHUBTARBALL
-  remote: stoeffel/puppet-nginx
-  specs:
-    nginx (1.1.0)
-
 DEPENDENCIES
   alfred2 (= 0.0.1)
   autoconf (= 1.0.0)
@@ -148,11 +158,13 @@ DEPENDENCIES
   pcre (= 1.0.0)
   php (= 0.4.2)
   pkgconfig (= 1.0.0)
+  postgresql (= 1.0.0)
   ruby (= 3.1.0)
   sourcetree (= 0.0.2)
   stdlib (= 3.0.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
+  sysctl (= 1.0.0)
   vmware_fusion (= 1.0.0)
   wget (= 1.0.0)
 
