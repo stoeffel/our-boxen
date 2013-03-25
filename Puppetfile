@@ -24,12 +24,17 @@ github "git",      "1.0.0"
 github "homebrew", "1.1.2"
 github "hub",      "1.0.0"
 github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
-github "nginx",    "1.1.0"
+github "nginx",    "1.1.0", :repo => "stoeffel/puppet-nginx"
 github "nodejs",   "1.0.0"
 github "nvm",      "1.0.0"
 github "ruby",     "3.1.0"
 github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
+github "wget",     "1.0.0"
+github "autoconf",     "1.0.0"
+github "libtool",     "1.0.0"
+github "pkgconfig",     "1.0.0"
+github "pcre",     "1.0.0"
 
 
 # Optional/custom modules. There are tons available at
@@ -42,3 +47,6 @@ github "vmware_fusion", "1.0.0"
 github "alfred2", "0.0.1", :repo => "grahamgilbert/puppet-alfred2"
 github "sourcetree", "0.0.2", :repo => "jlgeering/puppet-sourcetree"
 github "googledrive", "1.0.1", :repo => "gblair/puppet-googledrive"
+
+
+github "php", "0.4.2", :repo => "mattheath/puppet-php"
