@@ -85,4 +85,21 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  # BASH-IT
+  $home     = "/Users/${::luser}"
+  $bash_it  = "${home}/.bash_it"
+
+  repository { $bash_it:
+    source  => 'stoeffel/bash-it'
+  }
+
+
+
+  # custom stuff
+  include chrome
+  include iterm2::dev
+  include sublime_text_2
+  include alfred2
+
 }
