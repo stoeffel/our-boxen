@@ -101,5 +101,8 @@ node default {
   include iterm2::dev
   include sublime_text_2
   include alfred2
+  include vmware_fusion
+  include sourcetree
+  include googledrive
 
 }

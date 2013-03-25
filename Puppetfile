@@ -38,5 +38,7 @@ github "sudo",     "1.0.0"
 github "chrome", "1.1.0"
 github "iterm2", "1.0.2"
 github "sublime_text_2", "1.1.0"
+github "vmware_fusion", "1.0.0"
 github "alfred2", "0.0.1", :repo => "grahamgilbert/puppet-alfred2"
-
+github "sourcetree", "0.0.2", :repo => "jlgeering/puppet-sourcetree"
+github "googledrive", "1.0.1", :repo => "gblair/puppet-googledrive"
