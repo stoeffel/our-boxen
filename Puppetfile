@@ -51,4 +51,4 @@ github "sourcetree", "0.0.2", :repo => "jlgeering/puppet-sourcetree"
 github "googledrive", "1.0.1", :repo => "gblair/puppet-googledrive"
 
 
-github "php", "0.4.2", :repo => "mattheath/puppet-php"
+#github "php", "0.4.2", :repo => "mattheath/puppet-php"
