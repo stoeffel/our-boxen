@@ -104,6 +104,8 @@ node default {
   include alfred2
   include googledrive
 
+
   include apache
+  include php
 
 }
