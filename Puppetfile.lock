@@ -14,11 +14,6 @@ GITHUBTARBALL
     chrome (1.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-dnsmasq
-  specs:
-    dnsmasq (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (1.0.0)
@@ -47,11 +42,6 @@ GITHUBTARBALL
   remote: boxen/puppet-libtool
   specs:
     libtool (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nginx
-  specs:
-    nginx (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
@@ -129,9 +119,9 @@ GITHUBTARBALL
     sourcetree (0.0.2)
 
 GITHUBTARBALL
-  remote: mattheath/puppet-php
+  remote: mattheath/puppet-apache
   specs:
-    php (0.4.2)
+    apache (0.0.1)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
@@ -140,10 +130,10 @@ GITHUBTARBALL
 
 DEPENDENCIES
   alfred2 (= 0.0.1)
+  apache (= 0.0.1)
   autoconf (= 1.0.0)
   boxen (= 1.2.0)
   chrome (= 1.1.0)
-  dnsmasq (= 1.0.0)
   gcc (= 1.0.0)
   git (= 1.0.0)
   googledrive (= 1.0.1)
@@ -152,11 +142,9 @@ DEPENDENCIES
   inifile (= 0.9.0)
   iterm2 (= 1.0.2)
   libtool (= 1.0.0)
-  nginx (= 1.1.0)
   nodejs (= 1.0.0)
   nvm (= 1.0.0)
   pcre (= 1.0.0)
-  php (= 0.4.2)
   pkgconfig (= 1.0.0)
   postgresql (= 1.0.0)
   ruby (= 3.1.0)

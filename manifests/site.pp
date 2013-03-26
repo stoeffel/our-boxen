@@ -50,10 +50,9 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
+  
   include git
   include hub
-  include nginx
   include nvm
 
   # fail if FDE is not enabled
@@ -103,5 +102,8 @@ node default {
   include iterm2::dev
   include sublime_text_2
   include alfred2
+  include googledrive
+
+  include apache
 
 }

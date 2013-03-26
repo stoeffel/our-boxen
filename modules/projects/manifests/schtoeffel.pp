@@ -1,6 +1,7 @@
 class projects::schtoeffel {
+  
   boxen::project { 'schtoeffel':
-    nginx         => true,
+    nginx         => false,
     source        => 'stoeffel/schtoeffel.ch'
   }
 }
