@@ -72,7 +72,8 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
-  #include php
+  include mysql
+  include postgresql
 
   # common, useful packages
   package {
@@ -109,5 +110,6 @@ node default {
 
   include apache
   include php
+  include mysql_workbench
 
 }

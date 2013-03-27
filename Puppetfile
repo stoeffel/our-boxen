@@ -27,6 +27,7 @@ github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
 
 github "nodejs",   "1.1.0"
 github "postgresql",   "1.0.0"
+github "mysql",   "1.0.0"
 github "sysctl",   "1.0.0"
 github "nvm",      "1.0.0"
 github "ruby",     "3.1.0"
@@ -52,6 +53,6 @@ github "googledrive", "1.0.1", :repo => "gblair/puppet-googledrive"
 
 
 
-
+github "mysql_workbench", "1.0.0", :repo => "cdburgess/puppet-mysql_workbench"
 github "apache", "0.0.1", :repo =>"mattheath/puppet-apache"
 
