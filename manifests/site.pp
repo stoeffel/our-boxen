@@ -112,5 +112,6 @@ node default {
   include googledrive
   include sourcetree
   include vlc
+  include transmission
 
 }
