@@ -60,21 +60,7 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  # node versions
-  include nodejs::0-4
-  include nodejs::0-6
-  include nodejs::0-8
-  include nodejs::0-10
-
-  # default ruby versions
-  include ruby::1_8_7
-  include ruby::1_9_2
-  include ruby::1_9_3
-  include ruby::2_0_0
-
-  include mysql
-  include postgresql
-
+  
   # common, useful packages
   package {
     [
@@ -97,19 +83,34 @@ node default {
     source  => 'stoeffel/bash-it'
   }
 
+  # node versions
+  include nodejs::0-4
+  include nodejs::0-6
+  include nodejs::0-8
+  include nodejs::0-10
 
+  # default ruby versions
+  include ruby::1_8_7
+  include ruby::1_9_2
+  include ruby::1_9_3
+  include ruby::2_0_0
 
-  # custom stuff
+  # apache
+  include apache
+  include php
+
+  # DB
+  include mysql
+  include postgresql
+  include mysql_workbench
+
+  # some APPS
   include chrome
   include iterm2::dev
   include sublime_text_2
   include alfred2
   include googledrive
   include sourcetree
-
-
-  include apache
-  include php
-  include mysql_workbench
+  include vlc
 
 }

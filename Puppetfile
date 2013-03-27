@@ -38,11 +38,6 @@ github "autoconf",     "1.0.0"
 github "libtool",     "1.0.0"
 github "pkgconfig",     "1.0.0"
 github "pcre",     "1.0.0"
-
-
-# Optional/custom modules. There are tons available at
-# https://github.com/boxen.
-
 github "chrome", "1.1.0"
 github "iterm2", "1.0.2"
 github "sublime_text_2", "1.1.0"
@@ -50,9 +45,6 @@ github "vmware_fusion", "1.0.0"
 github "alfred2", "0.0.1", :repo => "grahamgilbert/puppet-alfred2"
 github "sourcetree", "0.0.2", :repo => "jlgeering/puppet-sourcetree"
 github "googledrive", "1.0.1", :repo => "gblair/puppet-googledrive"
-
-
-
 github "mysql_workbench", "1.0.0", :repo => "cdburgess/puppet-mysql_workbench"
 github "apache", "0.0.1", :repo =>"mattheath/puppet-apache"
-
+github "vlc", "1.0.0"
