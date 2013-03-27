@@ -25,7 +25,7 @@ github "homebrew", "1.1.2"
 github "hub",      "1.0.0"
 github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
 
-github "nodejs",   "1.0.0"
+github "nodejs",   "1.1.0"
 github "postgresql",   "1.0.0"
 github "sysctl",   "1.0.0"
 github "nvm",      "1.0.0"

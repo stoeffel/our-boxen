@@ -64,6 +64,7 @@ node default {
   include nodejs::0-4
   include nodejs::0-6
   include nodejs::0-8
+  include nodejs::0-10
 
   # default ruby versions
   include ruby::1_8_7
@@ -103,6 +104,7 @@ node default {
   include sublime_text_2
   include alfred2
   include googledrive
+  include sourcetree
 
 
   include apache

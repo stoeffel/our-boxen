@@ -46,7 +46,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (1.0.0)
+    nodejs (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nvm
@@ -142,7 +142,7 @@ DEPENDENCIES
   inifile (= 0.9.0)
   iterm2 (= 1.0.2)
   libtool (= 1.0.0)
-  nodejs (= 1.0.0)
+  nodejs (= 1.1.0)
   nvm (= 1.0.0)
   pcre (= 1.0.0)
   pkgconfig (= 1.0.0)
