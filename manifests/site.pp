@@ -95,6 +95,9 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  # java
+  include java
+
   # apache
   include apache
   include php
@@ -114,5 +117,10 @@ node default {
   include sourcetree
   include vlc
   include transmission
+  include textexpander
+  include eclipse::dev
+
+  # vim
+  include vim
 
 }
