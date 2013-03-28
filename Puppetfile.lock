@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: boxen/puppet-adium
+  specs:
+    adium (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
     autoconf (1.0.0)
@@ -7,6 +12,11 @@ GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-caffeine
+  specs:
+    caffeine (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -179,10 +189,12 @@ GITHUBTARBALL
     apache (0.0.2)
 
 DEPENDENCIES
+  adium (= 1.0.1)
   alfred2 (= 0.0.1)
   apache (= 0.0.2)
   autoconf (= 1.0.0)
   boxen (= 1.2.0)
+  caffeine (= 1.0.0)
   chrome (= 1.1.0)
   eclipse (= 1.0.0)
   firefox (= 1.0.5)
