@@ -106,6 +106,7 @@ node default {
 
   # some APPS
   include chrome
+  include firefox
   include iterm2::dev
   include sublime_text_2
   include alfred2
