@@ -119,6 +119,7 @@ node default {
   include transmission
   include textexpander
   include eclipse::dev
+  include adium
 
   # vim
   include vim
