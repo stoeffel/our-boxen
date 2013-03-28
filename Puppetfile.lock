@@ -144,6 +144,11 @@ GITHUBTARBALL
     sourcetree (0.0.2)
 
 GITHUBTARBALL
+  remote: mattheath/puppet-php
+  specs:
+    php (0.4.2)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (3.0.0)
@@ -173,6 +178,7 @@ DEPENDENCIES
   nodejs (= 1.1.0)
   nvm (= 1.0.0)
   pcre (= 1.0.0)
+  php (= 0.4.2)
   pkgconfig (= 1.0.0)
   postgresql (= 1.0.0)
   ruby (= 3.1.0)
