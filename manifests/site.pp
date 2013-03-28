@@ -120,6 +120,7 @@ node default {
   include textexpander
   include eclipse::dev
   include adium
+  include caffeine
 
   # vim
   include vim
