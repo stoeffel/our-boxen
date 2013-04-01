@@ -105,31 +105,36 @@ node default {
 
   # apache
   include apache
-  include php
+  #include php
 
   # DB
   include mysql
   include postgresql
   include mysql_workbench
 
-  # some APPS
+  # browser
   include chrome
   include firefox
+
+  # terminal
   include iterm2::dev
+
+  # editors
   include sublime_text_2
+  include eclipse::dev
+  include vim
+  vim::bundle { 'hallison/vim-markdown':}
+  
+  # misc
   include alfred2
   include googledrive
   include sourcetree
   include vlc
   include transmission
   include textexpander
-  include eclipse::dev
   include adium
   include caffeine
+  include vmware_fusion
 
-  # vim
-  include vim
-
-  vim::bundle { 'hallison/vim-markdown':}
 
 }
