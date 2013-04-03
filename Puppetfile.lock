@@ -188,6 +188,11 @@ GITHUBTARBALL
   specs:
     apache (0.0.2)
 
+GITHUBTARBALL
+  remote: stoeffel/puppet-sencha_cmd
+  specs:
+    sencha_cmd (0.0.1)
+
 DEPENDENCIES
   adium (= 1.0.1)
   alfred2 (= 0.0.1)
@@ -216,6 +221,7 @@ DEPENDENCIES
   pkgconfig (= 1.0.0)
   postgresql (= 1.0.0)
   ruby (= 3.1.0)
+  sencha_cmd (= 0.0.1)
   sourcetree (= 0.0.2)
   stdlib (= 3.0.0)
   sublime_text_2 (= 1.1.0)
