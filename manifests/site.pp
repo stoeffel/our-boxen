@@ -89,40 +89,52 @@ node default {
   include nodejs::0-8
   include nodejs::0-10
 
+
   # default ruby versions
   include ruby::1_8_7
   include ruby::1_9_2
   include ruby::1_9_3
   include ruby::2_0_0
 
+  class { 'ruby::global':
+    version => '1.9.3'
+  }
+
   # java
   include java
 
   # apache
   include apache
-  include php
+  #include php
 
   # DB
   include mysql
   include postgresql
   include mysql_workbench
 
-  # some APPS
+  # browser
   include chrome
   include firefox
+
+  # terminal
   include iterm2::dev
+
+  # editors
   include sublime_text_2
+  include eclipse::dev
+  include vim
+  vim::bundle { 'hallison/vim-markdown':}
+  
+  # misc
   include alfred2
   include googledrive
   include sourcetree
   include vlc
   include transmission
   include textexpander
-  include eclipse::dev
   include adium
   include caffeine
+  include vmware_fusion
 
-  # vim
-  include vim
 
 }
