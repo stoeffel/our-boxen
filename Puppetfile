@@ -57,3 +57,5 @@ github "java", "1.0.6"
 github "vim", "1.0.2"
 github "adium", "1.0.1"
 github "eclipse", "1.0.0", :repo => "pulse00/puppet-eclipse"
+
+#github "sencha_cmd", "0.0.2", :repo =>"stoeffel/puppet-sencha_cmd"

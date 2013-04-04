@@ -126,6 +126,7 @@ node default {
   vim::bundle { 'hallison/vim-markdown':}
   
   # misc
+  #include sencha_cmd
   include alfred2
   include googledrive
   include sourcetree

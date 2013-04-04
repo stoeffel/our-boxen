@@ -1,0 +1,49 @@
+#!/usr/bin/env ruby
+# create a project.pp
+
+user = ENV["BOXEN_GITHUB_LOGIN"]
+
+unless user
+  abort "BOXEN_GITHUB_LOGIN is not defined. Please re-run Boxen."
+end
+
+if ARGV[0] == '-h' || ARGV[0] == '-?'
+	puts "usage: boxen-project REPO PROJECTNAME"
+	abort
+end
+
+abort "usage: boxen-project REPO PROJECTNAME" if ARGV.size != 2
+
+repo = ARGV[0]
+project_name = ARGV[1]
+
+home   = ENV["BOXEN_HOME"] + "/repo"
+path   = "#{home}/modules/projects/manifests/#{project_name}.pp"
+
+unless File.exist? path
+  File.open path, "wb" do |f|
+    f.puts <<-EOF
+
+    class projects::#{project_name} {
+
+	  apache::vhost { '#{project_name}.dev': 
+		port => 80,
+		docroot  => "${boxen::config::srcdir}/#{project_name}",
+		host => '#{project_name}.dev'
+	  }
+
+
+	  boxen::project { '#{project_name}':
+	    nginx         => false,
+	    source        => '#{repo}'
+	  }
+	}
+
+    EOF
+  end
+end
+
+puts path
+
+puts "to clone run: boxen #{project_name}"
+puts "to add hosts entry run: hosts_alias #{project_name}.dev"
