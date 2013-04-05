@@ -99,11 +99,6 @@ GITHUBTARBALL
     ruby (3.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-sublime_text_2
-  specs:
-    sublime_text_2 (1.1.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -169,6 +164,11 @@ GITHUBTARBALL
     sourcetree (0.0.2)
 
 GITHUBTARBALL
+  remote: jpvanhal/puppet-sublime_text_2
+  specs:
+    sublime_text_2 (1.2.0)
+
+GITHUBTARBALL
   remote: mattheath/puppet-php
   specs:
     php (0.5.0)
@@ -218,7 +218,7 @@ DEPENDENCIES
   ruby (= 3.1.0)
   sourcetree (= 0.0.2)
   stdlib (= 3.0.0)
-  sublime_text_2 (= 1.1.0)
+  sublime_text_2 (= 1.2.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
   textexpander (= 1.0.0)

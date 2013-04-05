@@ -121,6 +121,9 @@ node default {
 
   # editors
   include sublime_text_2
+  sublime_text_2::package { 'JSsnippets':
+    source => 'jprichardson/sublime-js-snippets'
+  }
   include eclipse::dev
   include vim
   vim::bundle { 'hallison/vim-markdown':}
