@@ -124,18 +124,11 @@ node default {
   sublime_text_2::package { 'JSsnippets':
     source => 'jprichardson/sublime-js-snippets'
   }
-
-  sublime_text_2::package { 'Themr':
-    source => 'skt84/Themr'
+  sublime_text_2::package { 'ScssHighlighting':
+    source => 'kuroir/SCSS.tmbundle'
   }
 
-  sublime_text_2::package { 'NexusTheme':
-    source => 'EleazarCrusader/nexus-theme'
-  }
 
-  
-
-  
   include eclipse::dev
   include vim
   vim::bundle { 'hallison/vim-markdown':}
