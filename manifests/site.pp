@@ -146,4 +146,12 @@ node default {
   include vmware_fusion
 
 
+
+  apache::vhost { 'test.dev': 
+    port => 80,
+    docroot  => "${boxen::config::srcdir}/test",
+    host => 'test.dev'
+  }
+
+
 }
