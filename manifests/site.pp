@@ -130,15 +130,14 @@ node default {
   sublime_text_2::package { 'Theme - Flatland':
     source => 'thinkpixellab/flatland'
   }
-  #
-  # file { "${boxen::config::srcdir}/our-boxen":
-  #   ensure => link,
-  #   target => $boxen::config::repodir
-  # }
-  #
-
   sublime_text_2::package { 'Themr':
     source => 'skt84/Themr'
+  }
+  sublime_text_2::package { 'DocBlockr':
+    source => 'spadgos/sublime-jsdocs'
+  }
+  sublime_text_2::package { 'JsFormat':
+    source => 'jdc0589/JsFormat'
   }
   
 
