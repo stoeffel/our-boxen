@@ -130,9 +130,14 @@ node default {
   sublime_text_2::package { 'Theme - Flatland':
     source => 'thinkpixellab/flatland'
   }
-
   sublime_text_2::package { 'Themr':
     source => 'skt84/Themr'
+  }
+  sublime_text_2::package { 'DocBlockr':
+    source => 'spadgos/sublime-jsdocs'
+  }
+  sublime_text_2::package { 'JsFormat':
+    source => 'jdc0589/JsFormat'
   }
   
 

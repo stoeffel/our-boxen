@@ -10,7 +10,8 @@
 
 	  boxen::project { 'voodoo':
 	    nginx         => false,
-	    source        => 'stoeffel/voodoo'
+	    source        => 'stoeffel/voodoo',
+	    nodejs 		  => '0.10'
 	  }
 	}
 
