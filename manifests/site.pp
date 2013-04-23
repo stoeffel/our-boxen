@@ -139,6 +139,9 @@ node default {
   sublime_text_2::package { 'JsFormat':
     source => 'jdc0589/JsFormat'
   }
+  sublime_text_2::package { 'EditorConfig':
+    source => 'sindresorhus/editorconfig-sublime'
+  }
   
 
 
