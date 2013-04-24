@@ -53,7 +53,6 @@ node default {
   
   include git
   include hub
-  include nvm
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -84,10 +83,19 @@ node default {
   }
 
   # node versions
-  include nodejs::0-4
-  include nodejs::0-6
-  include nodejs::0-8
-  include nodejs::0-10
+  include nodejs::v0_10
+  include nodejs::v0_8_8
+
+  # install some npm modules
+  nodejs::module { 'bower':
+    node_version => 'v0.10'
+  }
+  nodejs::module { 'grunt-cli':
+    node_version => 'v0.10'
+  }
+  nodejs::module { 'yo':
+    node_version => 'v0.10'
+  }
 
 
   # default ruby versions
