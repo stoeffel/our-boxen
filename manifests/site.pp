@@ -97,6 +97,8 @@ node default {
     node_version => 'v0.10'
   }
 
+  #nodenv global v0.10
+
 
   # default ruby versions
   include ruby::1_8_7
