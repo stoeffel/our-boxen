@@ -97,6 +97,10 @@ node default {
     node_version => 'v0.10'
   }
 
+  nodejs::module { 'jshint':
+    node_version => 'v0.10'
+  }
+
   #nodenv global v0.10
 
 
