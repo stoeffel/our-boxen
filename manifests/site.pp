@@ -52,6 +52,10 @@ node default {
   # core modules, needed for most things
   
   include git
+  git::config::global { 'user.email':
+    value  => 'schtoeffel@gmail.com'
+  }
+
   include hub
 
   # fail if FDE is not enabled
@@ -156,6 +160,11 @@ node default {
   sublime_text_2::package { 'EditorConfig':
     source => 'sindresorhus/editorconfig-sublime'
   }
+
+  sublime_text_2::package { 'Sublime-Hacker-News-Reader':
+    source => 'Dimillian/Sublime-Hacker-News-Reader'
+  }
+  
   
 
 
