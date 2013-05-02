@@ -160,10 +160,13 @@ node default {
   sublime_text_2::package { 'EditorConfig':
     source => 'sindresorhus/editorconfig-sublime'
   }
-
   sublime_text_2::package { 'Sublime-Hacker-News-Reader':
     source => 'Dimillian/Sublime-Hacker-News-Reader'
   }
+  sublime_text_2::package { 'GitGutter':
+    source => 'jisaacks/GitGutter'
+  }
+  
   
   
 
@@ -183,7 +186,6 @@ node default {
   include adium
   include caffeine
   include vmware_fusion
-
 
 
   apache::vhost { 'test.dev': 
