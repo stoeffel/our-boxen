@@ -186,6 +186,7 @@ node default {
   include adium
   include caffeine
   include vmware_fusion
+  #include github_for_mac
 
 
   apache::vhost { 'test.dev': 
