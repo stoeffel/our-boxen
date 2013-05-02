@@ -174,6 +174,8 @@ node default {
   include eclipse::dev
   include vim
   vim::bundle { 'hallison/vim-markdown':}
+  vim::bundle { 'scrooloose/syntastic': }
+  vim::bundle { 'sjl/gundo.vim: }
   
   # misc
   #include sencha_cmd
