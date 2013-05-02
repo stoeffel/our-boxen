@@ -192,5 +192,10 @@ node default {
     host => 'test.dev'
   }
 
+  apache::vhost { 'boa.dev': 
+    port => 80,
+    docroot  => "${boxen::config::srcdir}/boa",
+    host => 'boa.dev'
+  }
 
 }
