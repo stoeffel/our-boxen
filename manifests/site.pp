@@ -132,6 +132,7 @@ node default {
 
   # browser
   include chrome
+  include chrome::canary
   include firefox
 
   # terminal
