@@ -172,8 +172,12 @@ node default {
 
 
   include eclipse::dev
+
+  # vim
   include vim
   vim::bundle { 'hallison/vim-markdown':}
+  vim::bundle { 'scrooloose/syntastic':}
+  vim::bundle { 'sjl/gundo.vim':}
   
   # misc
   #include sencha_cmd
@@ -186,6 +190,7 @@ node default {
   include adium
   include caffeine
   include vmware_fusion
+  #include github_for_mac
 
 
   apache::vhost { 'test.dev': 
