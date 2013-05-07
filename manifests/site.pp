@@ -191,9 +191,7 @@ node default {
   include adium
   include caffeine
   include vmware_fusion
-  include google_notifier
-  #include github_for_mac
-
+  
 
   apache::vhost { 'test.dev': 
     port => 80,
