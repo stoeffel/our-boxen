@@ -167,6 +167,9 @@ node default {
   sublime_text_2::package { 'GitGutter':
     source => 'jisaacks/GitGutter'
   }
+  sublime_text_2::package { 'CSS-Snippets':
+    source => 'joshnh/CSS-Snippets'
+  }
   
   
   
