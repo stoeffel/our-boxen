@@ -182,6 +182,9 @@ node default {
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
+  vim::bundle { 'vim-scripts/peaksea':}
+  vim::bundle { 'Lokaltog/powerline':}
+  vim::bundle { 'SublimeText/VintageEx':}
   
   # misc
   #include sencha_cmd
