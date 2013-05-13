@@ -170,6 +170,9 @@ node default {
   sublime_text_2::package { 'CSS-Snippets':
     source => 'joshnh/CSS-Snippets'
   }
+  sublime_text_2::package { 'VintageEx':
+    source => 'SublimeText/VintageEx'
+  }
   
   
   
@@ -184,7 +187,6 @@ node default {
   vim::bundle { 'sjl/gundo.vim':}
   vim::bundle { 'vim-scripts/peaksea':}
   vim::bundle { 'Lokaltog/powerline':}
-  vim::bundle { 'SublimeText/VintageEx':}
   
   # misc
   #include sencha_cmd
