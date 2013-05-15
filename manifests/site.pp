@@ -86,6 +86,13 @@ node default {
     source  => 'stoeffel/bash-it'
   }
 
+  # .dotfiles
+  $dotfiles  = "${home}/.dotfiles"
+
+  repository { $dotfiles:
+    source  => 'stoeffel/.dotfiles'
+  }
+
   # node versions
   include nodejs::v0_10
   include nodejs::v0_8_8
@@ -182,6 +189,11 @@ node default {
 
   # vim
   include vim
+  # Example of how you can manage your .vimrc
+  file { "/Users/${::boxen_user}/.vimrc":
+    target  => "/Users/${::boxen_user}/.dotfiles/vimrc",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
