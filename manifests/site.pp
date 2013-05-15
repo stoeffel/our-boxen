@@ -48,6 +48,8 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
+
+
 node default {
   # core modules, needed for most things
   
@@ -197,8 +199,9 @@ node default {
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
-  vim::bundle { 'vim-scripts/peaksea':}
+  vim::bundle { 'tomasr/molokai':}
   vim::bundle { 'Lokaltog/powerline':}
+  vim::bundle { 'wincent/Command-T':}
   
   # misc
   #include sencha_cmd
@@ -224,5 +227,9 @@ node default {
     docroot  => "${boxen::config::srcdir}/boa",
     host => 'boa.dev'
   }
+
+  # OSX - Settings
+
+  include osx::universal_access::ctrl_mod_zoom
 
 }
