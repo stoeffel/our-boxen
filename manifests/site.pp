@@ -204,6 +204,12 @@ node default {
   vim::bundle { 'scrooloose/nerdtree':}
   vim::bundle { 'editorconfig/editorconfig-vim':} 
   vim::bundle { 'kien/ctrlp.vim':} 
+  vim::bundle { 'sleistner/vim-jshint':} 
+
+  file { "/Users/${::boxen_user}/.jshintrc":
+    target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
 
   # misc
   #include sencha_cmd
