@@ -201,8 +201,10 @@ node default {
   vim::bundle { 'sjl/gundo.vim':}
   vim::bundle { 'tomasr/molokai':}
   vim::bundle { 'Lokaltog/powerline':}
-  vim::bundle { 'wincent/Command-T':}
-  
+  vim::bundle { 'scrooloose/nerdtree':}
+  vim::bundle { 'editorconfig/editorconfig-vim':} 
+  vim::bundle { 'kien/ctrlp.vim':} 
+
   # misc
   #include sencha_cmd
   include alfred2
