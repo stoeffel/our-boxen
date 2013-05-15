@@ -71,7 +71,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (2.1.0)
+    nodejs (2.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nvm
@@ -219,7 +219,7 @@ DEPENDENCIES
   libtool (= 1.0.0)
   mysql (= 1.0.0)
   mysql_workbench (= 1.0.0)
-  nodejs (= 2.1.0)
+  nodejs (= 2.2.0)
   nvm (= 1.0.0)
   osx (= 1.2.0)
   pcre (= 1.0.0)
