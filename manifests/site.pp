@@ -48,6 +48,8 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
+
+
 node default {
   # core modules, needed for most things
   
@@ -84,6 +86,13 @@ node default {
 
   repository { $bash_it:
     source  => 'stoeffel/bash-it'
+  }
+
+  # .dotfiles
+  $dotfiles  = "${home}/.dotfiles"
+
+  repository { $dotfiles:
+    source  => 'stoeffel/.dotfiles'
   }
 
   # node versions
@@ -182,12 +191,26 @@ node default {
 
   # vim
   include vim
+  # Example of how you can manage your .vimrc
+  file { "/Users/${::boxen_user}/.vimrc":
+    target  => "/Users/${::boxen_user}/.dotfiles/vimrc",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
-  vim::bundle { 'vim-scripts/peaksea':}
+  vim::bundle { 'tomasr/molokai':}
   vim::bundle { 'Lokaltog/powerline':}
-  
+  vim::bundle { 'scrooloose/nerdtree':}
+  vim::bundle { 'editorconfig/editorconfig-vim':} 
+  vim::bundle { 'kien/ctrlp.vim':} 
+  vim::bundle { 'sleistner/vim-jshint':} 
+
+  file { "/Users/${::boxen_user}/.jshintrc":
+    target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
+
   # misc
   #include sencha_cmd
   include alfred2
@@ -212,5 +235,9 @@ node default {
     docroot  => "${boxen::config::srcdir}/boa",
     host => 'boa.dev'
   }
+
+  # OSX - Settings
+
+  include osx::universal_access::ctrl_mod_zoom
 
 }
