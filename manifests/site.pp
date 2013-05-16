@@ -199,7 +199,7 @@ node default {
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
-  vim::bundle { 'thinkpixellab/flatland':}
+  vim::bundle { 'tomasr/molokai':}
   vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'scrooloose/nerdtree':}
   vim::bundle { 'editorconfig/editorconfig-vim':} 
@@ -207,6 +207,7 @@ node default {
   vim::bundle { 'sleistner/vim-jshint':} 
   vim::bundle { 'Valloric/YouCompleteMe':} 
   vim::bundle { 'tpope/vim-surround':} 
+  vim::bundle { 'terryma/vim-multiple-cursors':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
