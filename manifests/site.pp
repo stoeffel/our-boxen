@@ -199,7 +199,7 @@ node default {
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
-  vim::bundle { 'tomasr/molokai':}
+  vim::bundle { 'flazz/vim-colorschemes':}
   vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'scrooloose/nerdtree':}
   vim::bundle { 'editorconfig/editorconfig-vim':} 
