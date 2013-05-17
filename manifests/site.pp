@@ -200,14 +200,17 @@ node default {
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
   vim::bundle { 'flazz/vim-colorschemes':}
+  vim::bundle { 'maksimr/vim-jsbeautify':}
   vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'scrooloose/nerdtree':}
   vim::bundle { 'editorconfig/editorconfig-vim':} 
   vim::bundle { 'kien/ctrlp.vim':} 
-  vim::bundle { 'sleistner/vim-jshint':} 
+  vim::bundle { 'vim-scripts/jshint.vim':} 
   vim::bundle { 'Valloric/YouCompleteMe':} 
   vim::bundle { 'tpope/vim-surround':} 
   vim::bundle { 'terryma/vim-multiple-cursors':} 
+  vim::bundle { 'mileszs/ack.vim':} 
+  vim::bundle { 'airblade/vim-gitgutter':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
