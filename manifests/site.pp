@@ -191,9 +191,14 @@ node default {
 
   # vim
   include vim
+  include macvim
   # Example of how you can manage your .vimrc
   file { "/Users/${::boxen_user}/.vimrc":
     target  => "/Users/${::boxen_user}/.dotfiles/vimrc",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
+  file { "/Users/${::boxen_user}/.gvimrc":
+    target  => "/Users/${::boxen_user}/.dotfiles/gvimrc",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
   vim::bundle { 'hallison/vim-markdown':}
@@ -211,6 +216,7 @@ node default {
   vim::bundle { 'terryma/vim-multiple-cursors':} 
   vim::bundle { 'mileszs/ack.vim':} 
   vim::bundle { 'airblade/vim-gitgutter':} 
+  vim::bundle { 'Lokaltog/powerline-fonts':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",

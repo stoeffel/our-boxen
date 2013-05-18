@@ -64,6 +64,11 @@ GITHUBTARBALL
     libtool (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-macvim
+  specs:
+    macvim (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-mysql
   specs:
     mysql (1.0.0)
@@ -217,6 +222,7 @@ DEPENDENCIES
   iterm2 (= 1.0.2)
   java (= 1.0.6)
   libtool (= 1.0.0)
+  macvim (= 1.0.0)
   mysql (= 1.0.0)
   mysql_workbench (= 1.0.0)
   nodejs (= 2.2.0)
