@@ -201,12 +201,15 @@ node default {
     target  => "/Users/${::boxen_user}/.dotfiles/gvimrc",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
+  file { "/Users/${::boxen_user}/.config":
+    target  => "/Users/${::boxen_user}/.dotfiles/config_powerline",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
   vim::bundle { 'flazz/vim-colorschemes':}
   vim::bundle { 'maksimr/vim-jsbeautify':}
-  vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'scrooloose/nerdtree':}
   vim::bundle { 'editorconfig/editorconfig-vim':} 
   vim::bundle { 'kien/ctrlp.vim':} 
@@ -216,6 +219,7 @@ node default {
   vim::bundle { 'terryma/vim-multiple-cursors':} 
   vim::bundle { 'mileszs/ack.vim':} 
   vim::bundle { 'airblade/vim-gitgutter':} 
+  vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'Lokaltog/powerline-fonts':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
