@@ -208,7 +208,6 @@ node default {
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
-  vim::bundle { 'flazz/vim-colorschemes':}
   vim::bundle { 'maksimr/vim-jsbeautify':}
   vim::bundle { 'scrooloose/nerdtree':}
   vim::bundle { 'editorconfig/editorconfig-vim':} 
@@ -221,6 +220,8 @@ node default {
   vim::bundle { 'airblade/vim-gitgutter':} 
   vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'Lokaltog/powerline-fonts':} 
+  vim::bundle { 'altercation/vim-colors-solarized':} 
+  vim::bundle { 'tomasr/molokai':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
