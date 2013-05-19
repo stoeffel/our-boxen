@@ -221,8 +221,8 @@ node default {
   vim::bundle { 'altercation/vim-colors-solarized':} 
   vim::bundle { 'tomasr/molokai':} 
   vim::bundle { 'Lokaltog/vim-easymotion':} 
-  vim::bundle { 'amdt/vim-niji':} 
   vim::bundle { 'tpope/vim-fugitive':} 
+  vim::bundle { 'mhinz/vim-startify':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
