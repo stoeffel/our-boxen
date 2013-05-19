@@ -206,7 +206,6 @@ node default {
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
   vim::bundle { 'hallison/vim-markdown':}
-  vim::bundle { 'scrooloose/syntastic':}
   vim::bundle { 'sjl/gundo.vim':}
   vim::bundle { 'maksimr/vim-jsbeautify':}
   vim::bundle { 'scrooloose/nerdtree':}
@@ -217,11 +216,13 @@ node default {
   vim::bundle { 'tpope/vim-surround':} 
   vim::bundle { 'terryma/vim-multiple-cursors':} 
   vim::bundle { 'mileszs/ack.vim':} 
-  vim::bundle { 'airblade/vim-gitgutter':} 
   vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'Lokaltog/powerline-fonts':} 
   vim::bundle { 'altercation/vim-colors-solarized':} 
   vim::bundle { 'tomasr/molokai':} 
+  vim::bundle { 'Lokaltog/vim-easymotion':} 
+  vim::bundle { 'amdt/vim-niji':} 
+  vim::bundle { 'tpope/vim-fugitive':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
