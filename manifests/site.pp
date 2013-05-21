@@ -219,10 +219,10 @@ node default {
   vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'Lokaltog/powerline-fonts':} 
   vim::bundle { 'altercation/vim-colors-solarized':} 
-  vim::bundle { 'tomasr/molokai':} 
   vim::bundle { 'Lokaltog/vim-easymotion':} 
   vim::bundle { 'tpope/vim-fugitive':} 
   vim::bundle { 'mhinz/vim-startify':} 
+  vim::bundle { 'firat/vim-bufexplorer':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
