@@ -154,6 +154,11 @@ GITHUBTARBALL
     wget (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
+
+GITHUBTARBALL
   remote: cdburgess/puppet-mysql_workbench
   specs:
     mysql_workbench (1.0.0)
@@ -245,4 +250,5 @@ DEPENDENCIES
   vlc (= 1.0.0)
   vmware_fusion (= 1.0.0)
   wget (= 1.0.0)
+  zsh (= 1.0.0)
 

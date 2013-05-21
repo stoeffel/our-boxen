@@ -189,8 +189,15 @@ node default {
 
   include eclipse::dev
 
+  include zsh
+  # Example of how you can manage your .zshrc
+  file { "/Users/${::boxen_user}/.zshrc":
+    target  => "/Users/${::boxen_user}/.dotfiles/zshrc",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
+
   # vim
-  include vim
+
   include macvim
   # Example of how you can manage your .vimrc
   file { "/Users/${::boxen_user}/.vimrc":
