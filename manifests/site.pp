@@ -80,13 +80,7 @@ node default {
     target => $boxen::config::repodir
   }
 
-  # BASH-IT
   $home     = "/Users/${::luser}"
-  $bash_it  = "${home}/.bash_it"
-
-  repository { $bash_it:
-    source  => 'stoeffel/bash-it'
-  }
 
   # .dotfiles
   $dotfiles  = "${home}/.dotfiles"
