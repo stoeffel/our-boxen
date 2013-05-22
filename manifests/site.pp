@@ -211,7 +211,7 @@ node default {
   vim::bundle { 'maksimr/vim-jsbeautify':}
   vim::bundle { 'scrooloose/nerdtree':}
   vim::bundle { 'editorconfig/editorconfig-vim':} 
-  vim::bundle { 'kien/ctrlp.vim':} 
+  vim::bundle { 'wincent/Command-T':} 
   vim::bundle { 'vim-scripts/jshint.vim':} 
   vim::bundle { 'Valloric/YouCompleteMe':} 
   vim::bundle { 'tpope/vim-surround':} 
@@ -224,6 +224,7 @@ node default {
   vim::bundle { 'tpope/vim-fugitive':} 
   vim::bundle { 'mhinz/vim-startify':} 
   vim::bundle { 'firat/vim-bufexplorer':} 
+  vim::bundle { 'honza/vim-snipmat':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
