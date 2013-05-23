@@ -192,8 +192,8 @@ node default {
 
   # vim
 
-  include macvim
   include vim
+  include macvim
   # Example of how you can manage your .vimrc
   file { "/Users/${::boxen_user}/.vimrc":
     target  => "/Users/${::boxen_user}/.dotfiles/vimrc",
