@@ -192,6 +192,7 @@ node default {
 
   # vim
 
+  include macvim
   include vim
   # Example of how you can manage your .vimrc
   file { "/Users/${::boxen_user}/.vimrc":
@@ -220,11 +221,9 @@ node default {
   vim::bundle { 'Lokaltog/powerline':}
   vim::bundle { 'Lokaltog/powerline-fonts':} 
   vim::bundle { 'altercation/vim-colors-solarized':} 
-  vim::bundle { 'Lokaltog/vim-easymotion':} 
   vim::bundle { 'tpope/vim-fugitive':} 
   vim::bundle { 'mhinz/vim-startify':} 
   vim::bundle { 'firat/vim-bufexplorer':} 
-  vim::bundle { 'honza/vim-snipmate':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
