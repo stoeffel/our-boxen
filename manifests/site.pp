@@ -192,7 +192,7 @@ node default {
 
   # vim
 
-  include macvim
+  include vim
   # Example of how you can manage your .vimrc
   file { "/Users/${::boxen_user}/.vimrc":
     target  => "/Users/${::boxen_user}/.dotfiles/vimrc",
@@ -224,7 +224,7 @@ node default {
   vim::bundle { 'tpope/vim-fugitive':} 
   vim::bundle { 'mhinz/vim-startify':} 
   vim::bundle { 'firat/vim-bufexplorer':} 
-  vim::bundle { 'honza/vim-snipmat':} 
+  vim::bundle { 'honza/vim-snipmate':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
