@@ -189,6 +189,11 @@ node default {
     target  => "/Users/${::boxen_user}/.dotfiles/zshrc",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
+    repository {
+      "/Users/${::boxen_user}/z":
+        source   => 'rupa/z', #short hand for github repos
+        provider => 'git';
+    }
 
   # vim
 
@@ -222,8 +227,6 @@ node default {
   vim::bundle { 'Lokaltog/powerline-fonts':} 
   vim::bundle { 'altercation/vim-colors-solarized':} 
   vim::bundle { 'tpope/vim-fugitive':} 
-  vim::bundle { 'mhinz/vim-startify':} 
-  vim::bundle { 'firat/vim-bufexplorer':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
