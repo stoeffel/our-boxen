@@ -184,9 +184,12 @@ node default {
   include eclipse::dev
 
   include zsh
-  # Example of how you can manage your .zshrc
   file { "/Users/${::boxen_user}/.zshrc":
     target  => "/Users/${::boxen_user}/.dotfiles/zshrc",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
+  file { "/Users/${::boxen_user}/.zprofile":
+    target  => "/Users/${::boxen_user}/.dotfiles/zprofile",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
     repository {
@@ -212,6 +215,10 @@ node default {
     target  => "/Users/${::boxen_user}/.dotfiles/config_powerline",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
+  file { "/Users/${::boxen_user}/.vim/snippets":
+    target  => "/Users/${::boxen_user}/.dotfiles/vim_snippets",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
   vim::bundle { 'hallison/vim-markdown':}
   vim::bundle { 'sjl/gundo.vim':}
   vim::bundle { 'maksimr/vim-jsbeautify':}
@@ -227,6 +234,7 @@ node default {
   vim::bundle { 'Lokaltog/powerline-fonts':} 
   vim::bundle { 'altercation/vim-colors-solarized':} 
   vim::bundle { 'tpope/vim-fugitive':} 
+  vim::bundle { 'msanders/snipmate.vim':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
