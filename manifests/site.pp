@@ -130,7 +130,6 @@ node default {
 
   # DB
   include mysql
-  include postgresql
   include mysql_workbench
 
   # browser
@@ -232,6 +231,7 @@ node default {
   vim::bundle { 'tpope/vim-fugitive':} 
   vim::bundle { 'msanders/snipmate.vim':} 
   vim::bundle { 'scrooloose/syntastic':} 
+  vim::bundle { 'amiorin/vim-project':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
