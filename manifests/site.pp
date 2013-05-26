@@ -211,10 +211,6 @@ node default {
     target  => "/Users/${::boxen_user}/.dotfiles/gvimrc",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
-  file { "/Users/${::boxen_user}/.config":
-    target  => "/Users/${::boxen_user}/.dotfiles/config_powerline",
-    require => Repository["/Users/${::boxen_user}/.dotfiles"]
-  }
   file { "/Users/${::boxen_user}/.vim/snippets":
     target  => "/Users/${::boxen_user}/.dotfiles/vim_snippets",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
@@ -235,6 +231,7 @@ node default {
   vim::bundle { 'altercation/vim-colors-solarized':} 
   vim::bundle { 'tpope/vim-fugitive':} 
   vim::bundle { 'msanders/snipmate.vim':} 
+  vim::bundle { 'scrooloose/syntastic':} 
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
