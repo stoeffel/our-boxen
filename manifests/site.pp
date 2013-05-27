@@ -214,24 +214,7 @@ node default {
     target  => "/Users/${::boxen_user}/.dotfiles/vim_snippets",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
-  vim::bundle { 'hallison/vim-markdown':}
-  vim::bundle { 'sjl/gundo.vim':}
-  vim::bundle { 'maksimr/vim-jsbeautify':}
-  vim::bundle { 'scrooloose/nerdtree':}
-  vim::bundle { 'editorconfig/editorconfig-vim':} 
-  vim::bundle { 'wincent/Command-T':} 
-  vim::bundle { 'vim-scripts/jshint.vim':} 
-  vim::bundle { 'Valloric/YouCompleteMe':} 
-  vim::bundle { 'tpope/vim-surround':} 
-  vim::bundle { 'terryma/vim-multiple-cursors':} 
-  vim::bundle { 'mileszs/ack.vim':} 
-  vim::bundle { 'Lokaltog/powerline':}
-  vim::bundle { 'Lokaltog/powerline-fonts':} 
-  vim::bundle { 'altercation/vim-colors-solarized':} 
-  vim::bundle { 'tpope/vim-fugitive':} 
-  vim::bundle { 'msanders/snipmate.vim':} 
-  vim::bundle { 'scrooloose/syntastic':} 
-  vim::bundle { 'amiorin/vim-project':} 
+  vim::bundle { 'gmarik/vundle':}
 
   file { "/Users/${::boxen_user}/.jshintrc":
     target  => "/Users/${::boxen_user}/.dotfiles/jshintrc",
