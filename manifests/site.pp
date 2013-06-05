@@ -218,8 +218,8 @@ node default {
     target  => "/Users/${::boxen_user}/.dotfiles/gvimrc",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
-  file { "/Users/${::boxen_user}/.vim/snippets":
-    target  => "/Users/${::boxen_user}/.dotfiles/vim_snippets",
+  file { "/Users/${::boxen_user}/.editorconfig":
+    target  => "/Users/${::boxen_user}/.dotfiles/editorconfig",
     require => Repository["/Users/${::boxen_user}/.dotfiles"]
   }
   vim::bundle { 'gmarik/vundle':}
