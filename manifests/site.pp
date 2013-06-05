@@ -57,6 +57,14 @@ node default {
   git::config::global { 'user.email':
     value  => 'schtoeffel@gmail.com'
   }
+  file { "/Users/${::boxen_user}/.gitconfig":
+    target  => "/Users/${::boxen_user}/.dotfiles/gitconfig",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
+  file { "/Users/${::boxen_user}/.gitignore":
+    target  => "/Users/${::boxen_user}/.dotfiles/gitignore",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
 
   include hub
 
@@ -229,10 +237,8 @@ node default {
   include vlc
   include transmission
   include textexpander
-  include adium
   include caffeine
   include vmware_fusion
-  
 
   apache::vhost { 'test.dev': 
     port => 80,

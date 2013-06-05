@@ -1,9 +1,4 @@
 GITHUBTARBALL
-  remote: boxen/puppet-adium
-  specs:
-    adium (1.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
     autoconf (1.0.0)
@@ -209,7 +204,6 @@ GITHUBTARBALL
     apache (0.0.2)
 
 DEPENDENCIES
-  adium (= 1.0.1)
   alfred2 (= 0.0.1)
   apache (= 0.0.2)
   autoconf (= 1.0.0)
