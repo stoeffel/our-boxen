@@ -120,14 +120,15 @@ node default {
 
 
   # default ruby versions
-  include ruby::1_8_7
-  include ruby::1_9_2
-  include ruby::1_9_3
-  include ruby::2_0_0
-
+ ruby::version { '1.9.3': }
   class { 'ruby::global':
     version => '1.9.3'
   }
+
+  ruby::gem { "compass for ${version}":
+    gem =>  'compass',
+    ruby    => $version
+    }
 
   # java
   include java
