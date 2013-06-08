@@ -241,6 +241,11 @@ node default {
   include caffeine
   include vmware_fusion
 
+
+  # remove
+  package { 'textmate': ensure => absent }
+  package { 'shortcat': ensure => absent }
+
   apache::vhost { 'test.dev': 
     port => 80,
     docroot  => "${boxen::config::srcdir}/test",
