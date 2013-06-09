@@ -124,11 +124,6 @@ GITHUBTARBALL
     sysctl (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-textexpander
-  specs:
-    textexpander (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-transmission
   specs:
     transmission (1.0.0)
@@ -244,7 +239,6 @@ DEPENDENCIES
   sublime_text_2 (= 1.2.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
-  textexpander (= 1.0.0)
   transmission (= 1.0.0)
   vim (= 1.0.4)
   vlc (= 1.0.0)

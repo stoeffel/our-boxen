@@ -237,14 +237,16 @@ node default {
   include sourcetree
   include vlc
   include transmission
-  include textexpander
   include caffeine
   include vmware_fusion
+  include shortcat
 
 
   # remove
+  uninstall textmate
   package { 'textmate': ensure => absent }
-  package { 'shortcat': ensure => absent }
+  package { 'adium': ensure => absent }
+  package { 'textexpander': ensure => absent }
 
   apache::vhost { 'test.dev': 
     port => 80,
