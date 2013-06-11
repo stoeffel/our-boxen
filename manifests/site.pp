@@ -240,6 +240,7 @@ node default {
   include caffeine
   include vmware_fusion
   include shortcat
+  include keyremap4macbook
 
 
   # remove
