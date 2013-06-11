@@ -243,7 +243,6 @@ node default {
 
 
   # remove
-  uninstall textmate
   package { 'textmate': ensure => absent }
   package { 'adium': ensure => absent }
   package { 'textexpander': ensure => absent }
@@ -258,6 +257,11 @@ node default {
     port => 80,
     docroot  => "${boxen::config::srcdir}/boa",
     host => 'boa.dev'
+  }
+  apache::vhost { 'fuerto.dev': 
+    port => 80,
+    docroot  => "${boxen::config::srcdir}/fuerto",
+    host => 'fuerto.dev'
   }
 
   # OSX - Settings
