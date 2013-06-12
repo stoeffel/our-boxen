@@ -127,7 +127,7 @@ node default {
 
   ruby::gem { "compass for ${version}":
     gem =>  'compass',
-    ruby    => $version
+    ruby    => '1.9.3'
     }
 
   # java
