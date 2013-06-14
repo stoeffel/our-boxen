@@ -129,6 +129,11 @@ GITHUBTARBALL
     sysctl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-transmission
   specs:
     transmission (1.0.0)
@@ -245,6 +250,7 @@ DEPENDENCIES
   sublime_text_2 (= 1.2.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
+  tmux (= 1.0.2)
   transmission (= 1.0.0)
   vim (= 1.0.4)
   vlc (= 1.0.0)

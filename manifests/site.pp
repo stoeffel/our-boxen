@@ -130,6 +130,7 @@ node default {
     ruby    => '1.9.3'
     }
 
+
   # java
   include java
 
@@ -205,6 +206,12 @@ node default {
         source   => 'rupa/z', #short hand for github repos
         provider => 'git';
     }
+
+  include tmux
+  file { "/Users/${::boxen_user}/.tmux.conf":
+    target  => "/Users/${::boxen_user}/.dotfiles/tmux.conf",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
 
   # vim
 
