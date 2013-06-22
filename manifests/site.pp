@@ -97,6 +97,11 @@ node default {
     source  => 'stoeffel/.dotfiles'
   }
 
+  file { "/Users/${::boxen_user}/Gruntfile.js":
+    target  => "/Users/${::boxen_user}/.dotfiles/Gruntfile.js",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"]
+  }
+
   # node versions
   include nodejs::v0_10
   include nodejs::v0_8_8
@@ -106,6 +111,12 @@ node default {
     node_version => 'v0.10'
   }
   nodejs::module { 'grunt-cli':
+    node_version => 'v0.10'
+  }
+  nodejs::module { 'grunt-markdown-pdf':
+    node_version => 'v0.10'
+  }
+  nodejs::module { 'markdown-pdf':
     node_version => 'v0.10'
   }
   nodejs::module { 'yo':
