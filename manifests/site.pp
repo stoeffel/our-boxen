@@ -221,20 +221,6 @@ node default {
             provider => 'git';
     }
 
-    include tmux
-        <<<<<<< HEAD
-
-        =======
-        >>>>>>> 23dd322a2b9b6757b621c8db99777d677c6962c9
-        file { "/Users/${::boxen_user}/.tmux.conf":
-            target  => "/Users/${::boxen_user}/.dotfiles/tmux.conf",
-            require => Repository["/Users/${::boxen_user}/.dotfiles"]
-        }
-
-    <<<<<<< HEAD
-
-        =======
-        >>>>>>> 23dd322a2b9b6757b621c8db99777d677c6962c9
 # vim
 
         include vim
