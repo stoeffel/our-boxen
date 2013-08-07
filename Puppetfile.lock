@@ -251,6 +251,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
   tmux (= 1.0.2)
+  tmux (= 1.0.2)
   transmission (= 1.0.0)
   vim (= 1.0.4)
   vlc (= 1.0.0)
