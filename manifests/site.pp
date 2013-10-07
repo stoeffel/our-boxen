@@ -110,6 +110,9 @@ node default {
         nodejs::module { 'bower':
             node_version => 'v0.10'
         }
+        nodejs::module { 'phonegap':
+            node_version => 'v0.10'
+        }
     nodejs::module { 'grunt':
         node_version => 'v0.10'
     }
@@ -221,20 +224,6 @@ node default {
             provider => 'git';
     }
 
-    include tmux
-        <<<<<<< HEAD
-
-        =======
-        >>>>>>> 23dd322a2b9b6757b621c8db99777d677c6962c9
-        file { "/Users/${::boxen_user}/.tmux.conf":
-            target  => "/Users/${::boxen_user}/.dotfiles/tmux.conf",
-            require => Repository["/Users/${::boxen_user}/.dotfiles"]
-        }
-
-    <<<<<<< HEAD
-
-        =======
-        >>>>>>> 23dd322a2b9b6757b621c8db99777d677c6962c9
 # vim
 
         include vim
@@ -261,7 +250,7 @@ node default {
 
 # misc
 #include sencha_cmd
-    include alfred2
+    include alfred
         include googledrive
         include sourcetree
         include vlc
