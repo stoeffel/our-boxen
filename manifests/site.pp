@@ -110,6 +110,9 @@ node default {
         nodejs::module { 'bower':
             node_version => 'v0.10'
         }
+        nodejs::module { 'phonegap':
+            node_version => 'v0.10'
+        }
     nodejs::module { 'grunt':
         node_version => 'v0.10'
     }
@@ -247,7 +250,7 @@ node default {
 
 # misc
 #include sencha_cmd
-    include alfred2
+    include alfred
         include googledrive
         include sourcetree
         include vlc
