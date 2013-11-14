@@ -223,20 +223,20 @@ node default {
 
 # vim
 
-        include vim
+    include vim
         include macvim
 # Example of how you can manage your .vimrc
         file { "/Users/${::boxen_user}/.vimrc":
             target  => "/Users/${::boxen_user}/.dotfiles/vimrc",
-            require => Repository["/Users/${::boxen_user}/.dotfiles"]
+                    require => Repository["/Users/${::boxen_user}/.dotfiles"]
         }
     file { "/Users/${::boxen_user}/.gvimrc":
         target  => "/Users/${::boxen_user}/.dotfiles/gvimrc",
-        require => Repository["/Users/${::boxen_user}/.dotfiles"]
+                require => Repository["/Users/${::boxen_user}/.dotfiles"]
     }
     file { "/Users/${::boxen_user}/.editorconfig":
         target  => "/Users/${::boxen_user}/.dotfiles/editorconfig",
-        require => Repository["/Users/${::boxen_user}/.dotfiles"]
+                require => Repository["/Users/${::boxen_user}/.dotfiles"]
     }
     vim::bundle { 'gmarik/vundle':}
 
@@ -263,6 +263,11 @@ node default {
     package { 'adium': ensure => absent }
     package { 'textexpander': ensure => absent }
 
+    apache::vhost { 'mochi.dev': 
+        port => 80,
+             docroot  => "${boxen::config::srcdir}/mochi",
+             host => 'mochi.dev'
+    }
     apache::vhost { 'test.dev': 
         port => 80,
              docroot  => "${boxen::config::srcdir}/test",
